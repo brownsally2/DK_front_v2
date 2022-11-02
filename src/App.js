@@ -23,7 +23,7 @@ function App() {
           <Route path='/jointerm' element={<JoinTermPage/>}/>
           <Route path='/join' element={<JoinPage/>}/>
           <Route path='/main' element={<MainPage/>}/>
-          <Route path='/board' element={<BoardPage/>}/>
+          <Route path='/board/:boardId' element={<BoardPage/>}/>
           <Route path='/write' element={<WritePage/>}/>
           <Route path='/memberinfo' element={<MemberInfoPage/>}/>
           <Route path='/mywrite' element={<MyWritePage/>}/>

@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
-import Board from "./Board";
+import FreeBoard from "./FreeBoard";
+import RestaurantBoard from "./RestaurantBoard";
+import QuestionBoard from "./QuestionBoard";
+import EmploymentBoard from "./EmploymentBoard";
+import ForestBoard from "./ForestBoard";
 const Center = (props) =>{
   return(
     <div className={props.position + "center"}>
-      <Board/>
-      <Board/>
-      <Board/>
-      <Board/>
-      <Board/>
+      <FreeBoard/>
+      <RestaurantBoard/>
+      <QuestionBoard/>
+      <EmploymentBoard/>
+      <ForestBoard/>
     </div>
   );
 };
