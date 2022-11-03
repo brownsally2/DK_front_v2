@@ -1,7 +1,7 @@
-// import { Link } from "react-router-dom";
-// const MainBoardName = () =>{
-//   return(
-//      <Link to="/board" className="mainboardname">자유게시판</Link>
-//   );
-// };
-// export default MainBoardName;
+import { Link } from "react-router-dom";
+const MainBoardName = (props) =>{
+  return(
+    <Link to="#" className="mainboardname">{props.name}</Link>
+  );
+};
+export default MainBoardName;

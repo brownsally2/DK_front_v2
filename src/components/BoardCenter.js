@@ -17,6 +17,7 @@ const BoardCenter = () =>{
     const boardData = async () => {
       try {
         const response = await api.boardDetail(boardId);
+        
         setBoardDetail(response.data);
         console.log(response.data);//// 배열
       } catch(e) {
@@ -33,17 +34,9 @@ const BoardCenter = () =>{
       <BoardName key={board.boardName} name={board.boardName} />))}
       <NewWrite/>
       <Write/>
-      <Write/>
-      <Write/>
-      <Write/>
-      <Write/>
-      <Write/>
-      <Write/>
-      <Write/>
-      <Write/>
-      <Write/>
+      {/* <Write/> */}
+
     </div>
   );
 };
 export default BoardCenter;
-

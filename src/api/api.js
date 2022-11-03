@@ -12,12 +12,19 @@ const api = {
     return await axios.post(BASE_URL+ "LoginServlet", loginObj, HEADER);
   },
   // 게시판에 있는 글 조회
-  boardDetail: async function(boardName) {
+  boardDetail: async function() {
     const boardObj = {
-      cmd : "BoardInfo",
-      boardName : boardName
+      cmd : "BoardInfo"
     }
     return await axios.post(BASE_URL + "BoardServlet", boardObj, HEADER );
+  },
+  writeList : async function(boardName, pageNum) {
+    const writeListObj = {
+      cmd : "WriteList",
+      boardName : boardName,
+      pageNum: pageNum
+    };
+    return await axios.post(BASE_URL + "WriteServlet", writeListObj, HEADER);
   }
 };
 export default api;
