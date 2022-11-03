@@ -10,6 +10,9 @@ import WritePage from "./pages/WritePage";
 import LoginPage from "./pages/LoginPage";
 import MemberInfoPage from "./pages/MemberInfoPage";
 import MyWritePage from "./pages/MyWritePage";
+import UnReg2 from "./pages/UnReg2";
+import EmailChange from "./pages/EmailChange";
+import PwdChange from "./pages/PwdChange";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,6 +30,9 @@ function App() {
           <Route path='/write' element={<WritePage/>}/>
           <Route path='/memberinfo' element={<MemberInfoPage/>}/>
           <Route path='/mywrite' element={<MyWritePage/>}/>
+          <Route path='/UnReg2' element={<UnReg2/>}/>
+          <Route path='/EmailChange' element={<EmailChange/>}/>
+          <Route path='/PwdChange' element={<PwdChange />} />
         </Routes>
         {/* <Footer/> */}
       </Router>
