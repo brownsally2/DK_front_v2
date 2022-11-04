@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-const MainWriteName = () =>{
-  return(
-    <Link to="#" className="mainwritename">최신게시글<span>지금</span></Link>
-  );
-};
-export default MainWriteName;
+// import { Link } from "react-router-dom";
+// const MainWriteName = (props) =>{
+//   return(
+//     <Link to="#" className="mainwritename">{props.wrName}<span></span></Link>
+//   );
+// };
+// export default MainWriteName;
